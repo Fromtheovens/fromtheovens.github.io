@@ -10,6 +10,8 @@ html, body{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .shadow h1{
@@ -182,8 +184,7 @@ input{
 .items{
     padding-top: 80px;
     margin: 0 auto;
-    width: fit-content;
-    width: -moz-fit-content;
+    width: 100%;
 }
 
 .items h3{
@@ -433,4 +434,55 @@ li a:hover{
     margin-left: 10px;
     font-size: 26px;
     line-height: 1.7;
+}
+
+@media (max-width:1030px){
+    .his-img{
+        width: auto;
+    }
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .his-body{
+        width: auto;
+    }
+    .items h3{
+        padding-top: 20px;
+    }
+    .items p{
+        width: 94%;
+        padding-bottom: 40px;
+    }
+    .cols{
+        flex-direction: column;
+    }
+    .col-block{
+        width: 100%;
+    }
+    .bakers .col-block + .col-block{
+        padding-left: 0px;
+    }
+    .bakers h1{
+        width: auto;
+    }
+    .bakers h1:after {
+        margin-top: -126px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:783px){
+    .col-block + .col-block{
+        padding-left: 0px;
+    }
+    .bakers h1:after{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
 }
